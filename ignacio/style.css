@@ -1,0 +1,36 @@
+div
+{
+    height: 400px;
+    width: 400px;
+    background-color: grey;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 40%;
+    font-size: 25px;
+    border-radius: 5%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid black;
+    font-weight: bold;
+    
+}
+body
+{
+    background-image: url(imagens/shutterstock_520492693.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(100);
+}
+button
+{
+    margin-top: 7%;
+    height: 50px;
+    width: 300px;
+    font-size: 30px;
+}
+input
+{
+    height: 30px;
+    width:300px;
+    font-size: 20px;
+}
