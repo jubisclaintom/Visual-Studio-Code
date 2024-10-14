@@ -1,0 +1,26 @@
+/* o bloco abaico é uma regra
+h1 é um seletor de tag
+color é a propriedade
+blue é o valor da propriedade
+!important é uma declaração de prioridade*/
+h1
+{
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+/* Box Model*/
+.container
+{
+    background-color: wheat;
+    padding: 20px;
+    div:first-child{
+        background-color: forestgreen;
+        padding: 10px;
+    }
+    div:last-child{
+        background-color: greenyellow;
+        padding: 10px;
+    }
+}
