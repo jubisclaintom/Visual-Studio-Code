@@ -1,0 +1,52 @@
+/* o bloco abaico é uma regra
+h1 é um seletor de tag
+color é a propriedade
+blue é o valor da propriedade
+!important é uma declaração de prioridade*/
+h1 {
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/* Box Model*/
+.container {
+    background-color: wheat;
+    /* padding: 20px; 2-px em todos os lados*/
+    /* padding: 20px 30px 40px 10px; top right bottom left*/
+    /* padding: 50px 10px; top e bottom, right e left*/
+
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+
+    div:first-child {
+        background-color: forestgreen;
+        padding: 10px;
+        border: 3px dashed snow;
+        border-radius: 10px;
+        width: 500px;
+        height: 100px;
+    }
+
+    div:last-child {
+        background-color: greenyellow;
+        padding: 10px;
+        margin-top: 20px;
+        border-left:  5px solid black;
+    }
+}
+p
+{
+    background-color: rgb(224, 191, 130);
+
+}
+strong
+{
+    background-color: blue;
+}
