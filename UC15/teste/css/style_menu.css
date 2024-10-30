@@ -1,0 +1,22 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav, article, main, footer{
+    width: 1400px;
+    margin: 0px auto;
+}
+header{
+    background-color: #84c2b4;
+    color: #eb612f;
+    padding: 10px 0px;
+}
+nav img{
+    border-radius: 8px;
+}
