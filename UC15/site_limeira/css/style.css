@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+}
+nav, article, main, footer{
+    width: 1256px;
+    margin: 0px auto;
+}
+header{
+    background-color: #6c6394;
+    color: white;
+    padding: 10px 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav img{
+    border-radius: 8px; /* Arredonda os cantos */
+}
+
+.imagem_destaque img{
+    width: 100%;
+}
+/* Corpo do texto */
+
+main .conteudo {
+    display: flex;
+    justify-content: space-between;
+    div{
+        padding: 40px;
+        text-align: center;
+    }
+    i{
+        font-size: 100px;
+        color: green;
+    }
+    p{
+        font-size: 22px;
+    }
+}
+/* FOOTER */
+
+footer{
+    align-items: center;
+    padding: 10px;
+    background-color: #4f8073;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+    i{
+        color: #3a3030;
+    }
+    div a{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .bi-facebook{
+        color: blue;
+    }
+    .bi-youtube{
+        color: red;
+    }
+    .bi-whatsapp{
+        color: #25D366;
+    }
+    .bi-instagram{
+        background: linear-gradient(45deg, #F58529, #D6006C, #8a3ab9, #405de6);
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+    }
+}

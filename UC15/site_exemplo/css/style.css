@@ -179,3 +179,66 @@ ul, ol{
         text-align: center;
     }
 }
+
+.tabela3{
+    width: 100%;
+    border-collapse: collapse;
+
+    th{
+        padding: 10px;
+        text-align: start;
+        background-color: var(--cinza_claro);
+    }
+
+    td{
+        padding: 10px;
+    }
+    tr:nth-child(odd){
+        background-color: var(--cinza_ccc);
+    }
+    td:nth-child(3), th:nth-child(3){
+        text-align: end;
+    }
+}
+
+/* Formatação de serviços */
+
+.cards_servicos{
+    display: flex;
+    height: 300px;
+    i{
+        font-size: 3rem;
+        color: #61bce9;
+    }
+    div{
+        text-align: center;
+    }
+    div:nth-child(2){
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+/* Galeria */
+
+.galeria_destaque {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cinza_333);
+    margin: 30px 0px 10px;
+    img {
+        width: 60%;
+    }
+}
+
+.galeria_miniatura {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 90px;
+        border-radius: 6px;
+    }
+    img:hover {
+        cursor: pointer;
+    }
+}
