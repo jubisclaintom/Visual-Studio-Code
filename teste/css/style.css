@@ -45,6 +45,11 @@ nav img{
 .imagem_destaque img{
     width: 100%;
 }
+.bi-cart4{
+    color: red;
+    margin-left: 50px;
+    font-size: 50px;
+}
 
 /* Corpo */
 
@@ -157,7 +162,7 @@ main {
             /* Alimentos */
 
             .texto_produto10{
-                padding: 0px 53.5px;
+                padding: 0px 53px;
                 background-color: #3a3030;
                 color: white;
                 text-align: center;
