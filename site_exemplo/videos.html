@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Exemplo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav>
+            <img src="imagem/logo.png" alt="Logo do site exemplo">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="serviços.html">Serviços</a>
+                <a href="fotos.html">Fotos</a>
+                <a href="videos.html">Vídeos</a>
+                <a href="contato.html">Contato</a>
+            </span>
+        </nav>
+    </header>
+    <!-- Seção ou divisões da página -->
+    <section class="imagem_destaque">
+        <img src="imagem/destaque 5.png" alt="Imagem genérica de um editor de videos">
+    </section>
+    <!-- Área com o conteúdo principal da página -->
+    <article>
+        <h1>Galeria de vídeos</h1>
+        <section>
+            <h2>Vídeo em HTML5</h2>
+
+            <video controls>
+                <source src="imagem/passaro.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos em HTML5
+            </video>
+        </section>
+        <section>
+            <h2>Vídeo do youtube</h2>
+
+            <iframe src="https://www.youtube.com/embed/KNhdFlm-RYE?si=KkdG8hLnc98Alced&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UVrbie6qqAE?si=x-nFB-18_igFJiJu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>Ádio em HTML</h2>
+
+            <audio controls>
+                <source src="imagem/lofi-chill-medium-version-159456.mp3" type="audio/mp3">
+                <source src="imagem/MoonDeity-NEON-BLADE.mp3" type="audio/mp3">
+            </audio>
+        </section>
+    </article>
+    <!-- Rodapé do site -->
+    <footer>
+        <div>&copy; 2024 | Site de Exemplo | Créditos</div>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
