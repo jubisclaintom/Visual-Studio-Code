@@ -135,13 +135,14 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    box-shadow: 1px 3px 6px #3a3030ab;
     background-color:#ffffff;
 }
 
 table,
 th,
 td {
-    border: 1px solid #ddd;
+    border: 3px solid black;
 }
 
 th,
@@ -155,7 +156,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #928484;
+    background-color: #d4c6c6;
 }
 
 tr:hover {
@@ -167,6 +168,8 @@ ul{
     padding: 0px;
     margin: 0px;
     text-align: center;
+    width: 400px;
+    box-shadow: 1px 3px 6px #3a30308e;
 }
 
 ul li{
@@ -181,6 +184,7 @@ ul li:nth-child(old){
 ul li:nth-child(even){
     background-color: #e0e0e0;
 }
+
 
 
 /* FOOTER */

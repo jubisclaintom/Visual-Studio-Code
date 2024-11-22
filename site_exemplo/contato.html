@@ -29,6 +29,52 @@
     <!-- Área com o conteúdo principal da página -->
     <article>
         <h1>Contate-nos</h1>
+        <section class="contato">
+            <form action="enviacontato.php" method="post">
+                <div>
+                    <label for="">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="">Sexo:</label>
+                    <input type="radio" id="masculino" name="sexo" value="masc">Masculino
+                    <input type="radio" id="feminino" name="sexo" value="fem">Feminino
+                </div>
+                <div>
+                    <label for="">Estato:</label>
+                    <select name="estado" id="estado">
+                        <option>SP</option>
+                        <option>MG</option>
+                        <option>PR</option>
+                        <option>RS</option>
+                        <option>BA</option>
+                        <option>ES</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Comentário:</label>
+                    <textarea name="comentario" id="comentario" rows="8"></textarea>
+                </div>
+                <div>
+                    <label for="">Hobbies:</label>
+                    <input type="checkbox" name="cantar" id="cantar" value="1">Cantar
+                    <input type="checkbox" name="dormir" id="dormir" value="1">Dormir
+                    <input type="checkbox" name="dançar" id="dançar" value="1">Dançar
+                    <input type="checkbox" name="tocar" id="tocar" value="1">Tocar
+                    <input type="checkbox" name="jogar" id="jogar" value="1">Jogar
+                    <input type="checkbox" name="estudar" id="estudar" value="1">Estudar
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar Formulário">
+                </div>
+                <br><br><br><br>
+            </form>
+        </section>
+        <section class="mapa"></section>
         <section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1575.7174172218952!2d-122.42427626108052!3d37.82670491158873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085811569574f23%3A0x189c28e85a71ae17!2sIlha%20de%20Alcatraz!5e0!3m2!1spt-BR!2sbr!4v1731348717818!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
