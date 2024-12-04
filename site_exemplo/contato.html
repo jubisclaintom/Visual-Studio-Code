@@ -30,7 +30,7 @@
     <article>
         <h1>Contate-nos</h1>
         <section class="contato">
-            <form action="enviacontato.php" method="post">
+            <form action="enviacontato.php" method="post" id="form1">
                 <div>
                     <label for="">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
@@ -46,7 +46,8 @@
                 </div>
                 <div>
                     <label for="">Estato:</label>
-                    <select name="estado" id="estado">
+                    <select name="Estado" id="Estado">
+                        <option></option>
                         <option>SP</option>
                         <option>MG</option>
                         <option>PR</option>
@@ -57,7 +58,7 @@
                 </div>
                 <div>
                     <label for="">Comentário:</label>
-                    <textarea name="comentario" id="comentario" rows="8"></textarea>
+                    <textarea name="comentario" id="Comentario" rows="8"></textarea>
                 </div>
                 <div>
                     <label for="">Hobbies:</label>
@@ -90,5 +91,6 @@
             <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
     </footer>
+    <script src="js/validaFormulario.js"></script>
 </body>
 </html>
