@@ -29,6 +29,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 nav a {
@@ -191,32 +192,57 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
-article div ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    width: 400px;
-    box-shadow: 1px 3px 6px #3a30308e;
+.distancias{
+    section h2{
+        margin: 20px 0px;
+    }
+}
+.cidades{
+    margin-top: 30px;
+    h1{
+        margin: 10px 0px;
+    }
+    div{
+        box-shadow: 1px 3px 6px rgba(49, 48, 48, 0.61);
+        border-radius: 10px;
+        padding: 10px;
+    }
 }
 
-article div ul li {
-    padding: 10px;
-    font-size: 20px;
-    border-bottom: 1.5px solid #3a3030;
+.bairros {
+    h1{
+        margin: 20px 0px;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            width: 400px;
+            box-shadow: 1px 3px 6px #3a30308e;
+            li {
+                padding: 10px;
+                font-size: 20px;
+                border-bottom: 1.5px solid #3a3030;
+            }
+            li:nth-child(old) {
+                background-color: #6b5858;
+            }
+            li:nth-child(even) {
+                background-color: #e0e0e0;
+            }
+        }
+    }
 }
-
-article div ul li:nth-child(old) {
-    background-color: #6b5858;
-}
-
-article div ul li:nth-child(even) {
-    background-color: #e0e0e0;
-}
-
 .populacao {
     section {
         margin-bottom: 20px;
+        margin-top: 30px;
     }
 
     h1 {
@@ -259,10 +285,10 @@ article div ul li:nth-child(even) {
 
 .localizacao {
     section div {
+        text-align: center;
         box-shadow: 1px 3px 6px #00b318a4;
         border-radius: 10px;
         margin-top: 50px;
-        padding: 20px;
         border: 1px solid #25D366;
     }
 
@@ -313,7 +339,174 @@ article div ul li:nth-child(even) {
     }
 }
 
+.listao {
+    text-align: center;
+    background-color: #9b8282;
+    border-radius: 10px;
+    list-style: none;
+    padding: 20px;
+    box-shadow: 1px 3px 6px #3a3030;
+
+    li {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+.pontosturisticos {
+    h1 {
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 25px !important;
+    }
+
+    section .cartao {
+        box-shadow: 1px 3px 8px #232323a8;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        div {
+            display: flex;
+
+            img {
+                margin-left: 20px;
+                width: 50%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    iframe {
+        border-radius: 10px;
+        box-shadow: 1px 3px 8px #232323a8;
+    }
+}
+
+.listaprefeitos {
+    h1 {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+}
+
+.teste {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+
+    .imagem3 {
+        width: 80%;
+    }
+}
+
+.cartao {
+    box-shadow: 1px 3px 6px rgba(49, 48, 48, 0.61);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bairros {
+    h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    article div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+/* Estilo do formulário */
+.contato {
+    background: #ffffff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato form div {
+    margin-bottom: 15px;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contato input[type="text"],
+.contato input[type="email"],
+.contato input[type="number"],
+.contato textarea,
+.contato select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contato textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contato input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contato input[type="submit"] {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contato input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato {
+        padding: 10px;
+    }
+
+    .contato input[type="submit"] {
+        width: 100%;
+    }
+}
+
 /* FOOTER */
+
 
 footer {
     align-items: center;
@@ -350,5 +543,65 @@ footer {
         -webkit-background-clip: text;
         color: transparent;
         display: inline-block;
+    }
+}
+
+/* Media Queries para tornar o design responsivo */
+
+/* Estilo para telas menores que 768px (Dispositivos móveis) */
+@media (max-width: 600px) {
+
+    nav,
+    article,
+    main,
+    footer {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+
+    .conteudo2 div,
+    .conteudo3 div {
+        width: 100%;
+    }
+
+    .conteudo3 div img,
+    .conteudo2 div img {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 20vh;
+    }
+
+    main .conteudo {
+        flex-direction: column;
+    }
+
+    .pontosturisticos section .cartao div {
+        flex-direction: column;
+    }
+
+    .pontosturisticos section .cartao div img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 16px;
     }
 }

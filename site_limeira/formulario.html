@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distancias</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imagem/Bandeira_Limeira_SaoPaulo_Brasil.svg.png" alt="">
+            <span>
+                <a href="Cidade.html">Cidade</a>
+                <a href="Distancias.html">Distancias</a>
+                <a href="Bairros.html">Bairros</a>
+                <a href="Localizacao.html">Localização</a>
+                <a href="Populacao.html">População</a>
+                <a href="Pontos_Turisticos.html">Pontos Turisticos</a>
+                <a href="Esportes.html">Esportes</a>
+                <a href="Lista_de_Prefeitos.html">Lista de Prefeitos</a>
+                <a href="formulario.html">Formulario</a>
+                <a href="index.html">Menu</a>
+            </span>
+        </nav>
+    </header>
+
+    <section class="imagem_destaque">
+        <img src="imagem/distancias.png" alt="Imagem genérica de distancias">
+    </section>
+
+    <article class="contato">
+        <form action="enviacontato.php" id="form1" method="post">
+            <div>
+                <label for="">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="">Idade:</label>
+                <input type="number" name="idade" id="idade" required step="1" min="0" max="120">
+            </div>
+            <div>
+                <label for="">E-Mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="">Sexo</label>
+                <input type="radio" name="sexo" id="masculino" value="masc">Masculino
+                <input type="radio" name="sexo" id="feminino" value="fem">Feminino
+            </div>
+            <div>
+                <label for="">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BH">Bahia</option>
+                    <option value="PR">Paraiba</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="CE">Ceara</option>
+                    <option value="PA">Para</option>
+              
+                </select>
+            </div>
+            <div>
+                <label for="comentario">Comentário:</label>
+                <textarea name="comentario" id="comentario" minlength="100"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+            </div>
+        </form>
+    </article>
+    <footer>
+        <div>&copy; 2024 | Propriedade Intelectual do governo regional de Limeira | Créditos</div>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="js/ValidaFormulario.js"></script>
+</body>
+</html>
