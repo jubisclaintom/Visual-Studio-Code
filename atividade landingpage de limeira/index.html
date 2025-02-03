@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagens/hq720.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Introdução sobre Limeira</h5>
+                        <p class="card-text">Uma breve introdução sobre a cidade de Limeira e seus pontos turisticos e
+                            muito mais.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop1">
+                            Veja Aqui
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Limeira - Cidade e Cultura
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <section id="introducao">
+                                            <h2>Introdução</h2>
+                                            <p>Limeira é uma cidade localizada no interior do estado de São Paulo,
+                                                conhecida como a "Capital Brasileira da Joia Folheada" devido à sua
+                                                forte indústria de bijuterias e joias folheadas. Com mais de 300 mil
+                                                habitantes, Limeira tem uma economia diversificada, que também inclui os
+                                                setores agrícola, industrial e de serviços. A cidade possui uma história
+                                                rica, marcada pela produção cafeeira no século XIX e pela imigração
+                                                europeia, especialmente italiana, que influenciou a cultura local. Hoje,
+                                                Limeira é um polo industrial importante no estado e um local de muitas
+                                                tradições culturais e festividades anuais.</p>
+                                        </section>
+
+                                        <section id="cultura">
+                                            <h2>Cultura de Limeira</h2>
+                                            <p>A cultura de Limeira é rica e diversificada, marcada pela influência dos
+                                                imigrantes, especialmente italianos, que ajudaram a moldar a identidade
+                                                local. A cidade é reconhecida por suas tradições culturais, como a
+                                                música sertaneja e o teatro, além de eventos anuais como a Festa do Peão
+                                                de Limeira, que celebra a cultura rural e atrai visitantes de vários
+                                                tipos.</p>
+                                            <p>O artesanato e a produção de joias folheadas também fazem parte do
+                                                patrimônio limeirense, com destaque nacional. Limeira possui centros
+                                                culturais, como o Teatro Vitória, que promove apresentações de música,
+                                                dança e artes cênicas, incentivando a arte local. Além disso, a cidade
+                                                valoriza tradições religiosas e populares, com celebrações como a Festa
+                                                de Nossa Senhora das Dores, a padroeira da cidade.</p>
+                                        </section>
+
+                                        <section id="pontos-turisticos">
+                                            <h2>Pontos Turísticos</h2>
+                                            <p>Limeira oferece diversos pontos turísticos que combinam história, cultura
+                                                e lazer. Entre os principais, estão o Museu Histórico e Pedagógico Major
+                                                José Levy Sobrinho, que preserva objetos e documentos importantes da
+                                                história local, e o Horto Florestal, um espaço verde ideal para
+                                                caminhadas e piqueniques. A Gruta da Paz, com seu ambiente tranquilo, é
+                                                outro destaque, assim como o Parque Cidade, onde moradores e visitantes
+                                                podem desfrutar de atividades ao ar livre. Limeira também abrigou a
+                                                Catedral Nossa Senhora das Dores, conhecida por sua bela arquitetura e
+                                                importância histórica.</p>
+                                        </section>
+
+                                        <section id="prefeitura">
+                                            <h2>Prefeitura</h2>
+                                            <p>A Prefeitura de Limeira é uma instituição responsável pela administração
+                                                pública da cidade, trabalhando para promover o desenvolvimento urbano,
+                                                econômico, social e cultural. Com o objetivo de atender às necessidades
+                                                dos cidadãos, a prefeitura coordena serviços essenciais nas áreas de
+                                                saúde, educação, infraestrutura, transporte, meio ambiente e segurança
+                                                pública. Além disso, desenvolve programas voltados à qualidade de vida,
+                                                ao apoio à economia local e à preservação do patrimônio cultural de
+                                                Limeira.</p>
+                                            <p>Atuando como um elo entre a comunidade e o governo, a prefeitura busca
+                                                construir uma cidade cada vez mais inclusiva e sustentável. <a
+                                                    href="http://www.limeira.sp.gov.br" target="_blank">Acesse o
+                                                    Site</a></p>
+                                        </section>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagens/gruta-centro-da-cidade.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Distâncias</h5>
+                        <p class="card-text">Listando as Distâncias entre os países.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">
+                            Veja Aqui
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h1>Distâncias de Limeira</h1>
+
+                                        <table>
+                                            <caption>Distância de Limeira para outras cidades</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>Cidade</th>
+                                                    <th>Distância (km)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>São Paulo</td>
+                                                    <td>152</td>
+                                                    <td><iframe
+                                                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d606337.2982855572!2d-47.376787142337456!3d-23.058134629254184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!3m2!1d-23.555771399999998!2d-46.6395571!5e1!3m2!1spt-BR!2sbr!4v1738612162781!5m2!1spt-BR!2sbr"
+                                                            width="220px" style="border:0;" allowfullscreen=""
+                                                            loading="lazy"
+                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Campinas</td>
+                                                    <td>58.1</td>
+                                                    <td><iframe
+                                                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d303892.6524046841!2d-47.427445884997!3d-22.73454399136172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x94c8c8f6a2552649%3A0x7475001c58043536!2sCampinas%20-%20SP!3m2!1d-22.905082399999998!2d-47.0613327!5e1!3m2!1spt-BR!2sbr!4v1738611539618!5m2!1spt-BR!2sbr"
+                                                            width="220px" style="border:0;" allowfullscreen=""
+                                                            loading="lazy"
+                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sorocaba</td>
+                                                    <td>188</td>
+                                                    <td><iframe
+                                                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d606493.9648297731!2d-47.65711146000305!3d-23.023331465446518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x94c5f54bcad87989%3A0x4a9099fb9d10cb8e!2sSorocaba%2C%20SP!3m2!1d-23.4709096!2d-47.485143799999996!5e1!3m2!1spt-BR!2sbr!4v1738611967561!5m2!1spt-BR!2sbr"
+                                                            width="220px" style="border:0;" allowfullscreen=""
+                                                            loading="lazy"
+                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fortaleza</td>
+                                                    <td>424.2</td>
+                                                    <td><iframe
+                                                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d10269688.766390067!2d-49.202180021650555!3d-13.09231747762298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x7c74c3f464c783f%3A0x4661c60a0c6b37ca!2sFortaleza%20-%20CE!3m2!1d-3.7327203!2d-38.5270134!5e1!3m2!1spt-BR!2sbr!4v1738612057671!5m2!1spt-BR!2sbr"
+                                                            width="220px" style="border:0;" allowfullscreen=""
+                                                            loading="lazy"
+                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Curitiba</td>
+                                                    <td>542</td>
+                                                    <td><iframe
+                                                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2408298.2653340395!2d-49.33216665747826!3d-23.986777987212953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!3m2!1d-25.4268985!2d-49.265198399999996!5e1!3m2!1spt-BR!2sbr!4v1738612105901!5m2!1spt-BR!2sbr"
+                                                            width="220px" style="border:0;" allowfullscreen=""
+                                                            loading="lazy"
+                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table>
+                                            <caption>Distâncias do Centro de Limeira para outros pontos interessantes
+                                            </caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>Ponto de Referência</th>
+                                                    <th>Distância (km)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Shopping Limeira</td>
+                                                    <td>4.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Estádio Major José</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UNIP - Campus Limeira</td>
+                                                    <td>5.7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Parque Cidade de Limeira</td>
+                                                    <td>5.8</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1659.563976797694!2d-47.42531347306837!3d-22.597892462339303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c881b75264e083%3A0xe4fafd61f1bafc08!2sJardim%20Ipanema%2C%20Limeira%20-%20SP%2C%2013481-729!5e1!3m2!1spt-BR!2sbr!4v1738612785415!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Principais Bairros de Limeira</h5>
+                        <p class="card-text">Listando os bairros mais populares ou populosos de Limeira.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Veja Aqui
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Principais Bairros de
+                                            Limeira</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <ul>
+                                            <li>Centro</li>
+                                            <li>Jardim Ouro Verde</li>
+                                            <li>Jardim Planalto</li>
+                                            <li>Jardim Maria Luiza</li>
+                                            <li>Jardim Piratininga</li>
+                                            <li>Vila São João</li>
+                                            <li>Jardim São Carlos</li>
+                                            <li>Vila Cláudia</li>
+                                            <li>Jardim Brasil</li>
+                                            <li>Jardim Nova Limeira</li>
+                                            <li>Vila Santa Helena</li>
+                                            <li>Jardim São Francisco</li>
+                                            <li>Vila Oliveira</li>
+                                            <li>Jardim Leopoldina</li>
+                                            <li>Vila Americana</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagens/hq720.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">População</h5>
+                        <p class="card-text">Uma breve introdução sobre a estastisticas populacionais de Limeira.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop4">
+                            Veja Aqui
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Limeira - Cidade e Cultura
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <h1>Informações sobre Limeira</h1>
+
+                                            <h2>Introdução</h2>
+                                            <p>Limeira é uma cidade localizada no interior do estado de São Paulo,
+                                                Brasil, a cerca de 150 km da capital paulista. Faz parte da região
+                                                metropolitana de Campinas e está estrategicamente posicionada próxima a
+                                                importantes rodovias, como a Anhanguera e a Washington Luís. Conhecida
+                                                como a "Capital Brasileira da Joia Folheada", destaca-se pela sua
+                                                economia diversificada, especialmente nos setores industrial e agrícola.
+                                                Além disso, possui um clima tropical de altitude e uma rica história
+                                                ligada ao cultivo de café e cana-de-açúcar no século XIX.</p>
+
+                                            <h3>Dados Populacionais</h3>
+                                            <ul>
+                                                <li><strong>População:</strong> 291.869 habitantes (Censo 2022).</li>
+                                                <li><strong>Área Territorial:</strong> 581 km².</li>
+                                                <li><strong>Densidade Demográfica:</strong> Cerca de 502 habitantes por
+                                                    km².</li>
+                                                <li><strong>Taxa de Alfabetização:</strong> 97,2%, superior às médias
+                                                    estaduais e nacionais.</li>
+                                                <li><strong>Produto Interno Bruto (PIB):</strong> Informações elaboradas
+                                                    sobre o PIB podem ser consultadas no site do <a
+                                                        href="https://www.ibge.gov.br" target="_blank">IBGE</a>.</li>
+                                            </ul>
+
+                                            <h3>Saiba mais</h3>
+                                            <ul>
+                                                <li><a href="https://pt.wikipedia.org/wiki/Limeira"
+                                                        target="_blank">Wikipedia</a></li>
+                                                <li><a href="https://www.ibge.gov.br" target="_blank">IBGE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
