@@ -4,50 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade Card Responsive 4k em HD Deluxe Edition</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        th,
-        td {
-            padding: 8px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        caption {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 
 <body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex align-items-center">
+            <!-- Logo -->
+            <img src="imagens/hq720.jpg" alt="Logo" class="img-fluid"
+                style="width: 50px; height: 50px; margin-right: 10px;">
+
+            <!-- Nome do Site -->
+            <h1 class="m-0">Site Limeira</h1>
+        </div>
+    </header>
+
     <div class="container text-center">
         <div class="row">
-            <div class="col">
+            <div class="col mt-3">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/hq720.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -72,64 +52,33 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-
-                                        <section id="introducao">
-                                            <h2>Introdução</h2>
-                                            <p>Limeira é uma cidade localizada no interior do estado de São Paulo,
-                                                conhecida como a "Capital Brasileira da Joia Folheada" devido à sua
-                                                forte indústria de bijuterias e joias folheadas. Com mais de 300 mil
-                                                habitantes, Limeira tem uma economia diversificada, que também inclui os
-                                                setores agrícola, industrial e de serviços. A cidade possui uma história
-                                                rica, marcada pela produção cafeeira no século XIX e pela imigração
-                                                europeia, especialmente italiana, que influenciou a cultura local. Hoje,
-                                                Limeira é um polo industrial importante no estado e um local de muitas
-                                                tradições culturais e festividades anuais.</p>
-                                        </section>
-
-                                        <section id="cultura">
-                                            <h2>Cultura de Limeira</h2>
-                                            <p>A cultura de Limeira é rica e diversificada, marcada pela influência dos
-                                                imigrantes, especialmente italianos, que ajudaram a moldar a identidade
-                                                local. A cidade é reconhecida por suas tradições culturais, como a
-                                                música sertaneja e o teatro, além de eventos anuais como a Festa do Peão
-                                                de Limeira, que celebra a cultura rural e atrai visitantes de vários
-                                                tipos.</p>
-                                            <p>O artesanato e a produção de joias folheadas também fazem parte do
-                                                patrimônio limeirense, com destaque nacional. Limeira possui centros
-                                                culturais, como o Teatro Vitória, que promove apresentações de música,
-                                                dança e artes cênicas, incentivando a arte local. Além disso, a cidade
-                                                valoriza tradições religiosas e populares, com celebrações como a Festa
-                                                de Nossa Senhora das Dores, a padroeira da cidade.</p>
-                                        </section>
-
-                                        <section id="pontos-turisticos">
-                                            <h2>Pontos Turísticos</h2>
-                                            <p>Limeira oferece diversos pontos turísticos que combinam história, cultura
-                                                e lazer. Entre os principais, estão o Museu Histórico e Pedagógico Major
-                                                José Levy Sobrinho, que preserva objetos e documentos importantes da
-                                                história local, e o Horto Florestal, um espaço verde ideal para
-                                                caminhadas e piqueniques. A Gruta da Paz, com seu ambiente tranquilo, é
-                                                outro destaque, assim como o Parque Cidade, onde moradores e visitantes
-                                                podem desfrutar de atividades ao ar livre. Limeira também abrigou a
-                                                Catedral Nossa Senhora das Dores, conhecida por sua bela arquitetura e
-                                                importância histórica.</p>
-                                        </section>
-
-                                        <section id="prefeitura">
-                                            <h2>Prefeitura</h2>
-                                            <p>A Prefeitura de Limeira é uma instituição responsável pela administração
-                                                pública da cidade, trabalhando para promover o desenvolvimento urbano,
-                                                econômico, social e cultural. Com o objetivo de atender às necessidades
-                                                dos cidadãos, a prefeitura coordena serviços essenciais nas áreas de
-                                                saúde, educação, infraestrutura, transporte, meio ambiente e segurança
-                                                pública. Além disso, desenvolve programas voltados à qualidade de vida,
-                                                ao apoio à economia local e à preservação do patrimônio cultural de
-                                                Limeira.</p>
-                                            <p>Atuando como um elo entre a comunidade e o governo, a prefeitura busca
-                                                construir uma cidade cada vez mais inclusiva e sustentável. <a
-                                                    href="http://www.limeira.sp.gov.br" target="_blank">Acesse o
-                                                    Site</a></p>
-                                        </section>
+                                        <div class="container py-5">
+                                            <!-- Introdução -->
+                                            <section id="introducao" class="mb-5">
+                                              <h2 class="mb-3">Introdução</h2>
+                                              <p>Limeira é uma cidade localizada no interior do estado de São Paulo, conhecida como a "Capital Brasileira da Joia Folheada" devido à sua forte indústria de bijuterias e joias folheadas. Com mais de 300 mil habitantes, Limeira tem uma economia diversificada, que também inclui os setores agrícola, industrial e de serviços. A cidade possui uma história rica, marcada pela produção cafeeira no século XIX e pela imigração europeia, especialmente italiana, que influenciou a cultura local. Hoje, Limeira é um polo industrial importante no estado e um local de muitas tradições culturais e festividades anuais.</p>
+                                            </section>
+                                        
+                                            <!-- Cultura de Limeira -->
+                                            <section id="cultura" class="mb-5">
+                                              <h2 class="mb-3">Cultura de Limeira</h2>
+                                              <p>A cultura de Limeira é rica e diversificada, marcada pela influência dos imigrantes, especialmente italianos, que ajudaram a moldar a identidade local. A cidade é reconhecida por suas tradições culturais, como a música sertaneja e o teatro, além de eventos anuais como a Festa do Peão de Limeira, que celebra a cultura rural e atrai visitantes de vários tipos.</p>
+                                              <p>O artesanato e a produção de joias folheadas também fazem parte do patrimônio limeirense, com destaque nacional. Limeira possui centros culturais, como o Teatro Vitória, que promove apresentações de música, dança e artes cênicas, incentivando a arte local. Além disso, a cidade valoriza tradições religiosas e populares, com celebrações como a Festa de Nossa Senhora das Dores, a padroeira da cidade.</p>
+                                            </section>
+                                        
+                                            <!-- Pontos Turísticos -->
+                                            <section id="pontos-turisticos" class="mb-5">
+                                              <h2 class="mb-3">Pontos Turísticos</h2>
+                                              <p>Limeira oferece diversos pontos turísticos que combinam história, cultura e lazer. Entre os principais, estão o Museu Histórico e Pedagógico Major José Levy Sobrinho, que preserva objetos e documentos importantes da história local, e o Horto Florestal, um espaço verde ideal para caminhadas e piqueniques. A Gruta da Paz, com seu ambiente tranquilo, é outro destaque, assim como o Parque Cidade, onde moradores e visitantes podem desfrutar de atividades ao ar livre. Limeira também abrigou a Catedral Nossa Senhora das Dores, conhecida por sua bela arquitetura e importância histórica.</p>
+                                            </section>
+                                        
+                                            <!-- Prefeitura -->
+                                            <section id="prefeitura">
+                                              <h2 class="mb-3">Prefeitura</h2>
+                                              <p>A Prefeitura de Limeira é uma instituição responsável pela administração pública da cidade, trabalhando para promover o desenvolvimento urbano, econômico, social e cultural. Com o objetivo de atender às necessidades dos cidadãos, a prefeitura coordena serviços essenciais nas áreas de saúde, educação, infraestrutura, transporte, meio ambiente e segurança pública. Além disso, desenvolve programas voltados à qualidade de vida, ao apoio à economia local e à preservação do patrimônio cultural de Limeira.</p>
+                                              <p>Atuando como um elo entre a comunidade e o governo, a prefeitura busca construir uma cidade cada vez mais inclusiva e sustentável. <a href="http://www.limeira.sp.gov.br" target="_blank">Acesse o Site</a></p>
+                                            </section>
+                                          </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -141,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col mt-3">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/gruta-centro-da-cidade.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -159,19 +108,20 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Distâncias de Limeira</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <h1>Distâncias de Limeira</h1>
 
-                                        <table>
+                                        <!-- Primeira Tabela: Distâncias de Limeira para outras cidades -->
+                                        <table class="table table-striped table-bordered table-hover w-100%">
                                             <caption>Distância de Limeira para outras cidades</caption>
-                                            <thead>
+                                            <thead class="table-dark">
                                                 <tr>
                                                     <th>Cidade</th>
                                                     <th>Distância (km)</th>
+                                                    <th>Localização</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -180,53 +130,44 @@
                                                     <td>152</td>
                                                     <td><iframe
                                                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d606337.2982855572!2d-47.376787142337456!3d-23.058134629254184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!3m2!1d-23.555771399999998!2d-46.6395571!5e1!3m2!1spt-BR!2sbr!4v1738612162781!5m2!1spt-BR!2sbr"
-                                                            width="220px" style="border:0;" allowfullscreen=""
-                                                            loading="lazy"
-                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                            width="100%" height="100%" loading="lazy"></iframe></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Campinas</td>
                                                     <td>58.1</td>
                                                     <td><iframe
                                                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d303892.6524046841!2d-47.427445884997!3d-22.73454399136172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x94c8c8f6a2552649%3A0x7475001c58043536!2sCampinas%20-%20SP!3m2!1d-22.905082399999998!2d-47.0613327!5e1!3m2!1spt-BR!2sbr!4v1738611539618!5m2!1spt-BR!2sbr"
-                                                            width="220px" style="border:0;" allowfullscreen=""
-                                                            loading="lazy"
-                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                            width="100%" height="100%" loading="lazy"></iframe></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Sorocaba</td>
                                                     <td>188</td>
                                                     <td><iframe
                                                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d606493.9648297731!2d-47.65711146000305!3d-23.023331465446518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x94c5f54bcad87989%3A0x4a9099fb9d10cb8e!2sSorocaba%2C%20SP!3m2!1d-23.4709096!2d-47.485143799999996!5e1!3m2!1spt-BR!2sbr!4v1738611967561!5m2!1spt-BR!2sbr"
-                                                            width="220px" style="border:0;" allowfullscreen=""
-                                                            loading="lazy"
-                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                            width="100%" height="100%" loading="lazy"></iframe></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Fortaleza</td>
                                                     <td>424.2</td>
                                                     <td><iframe
                                                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d10269688.766390067!2d-49.202180021650555!3d-13.09231747762298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x7c74c3f464c783f%3A0x4661c60a0c6b37ca!2sFortaleza%20-%20CE!3m2!1d-3.7327203!2d-38.5270134!5e1!3m2!1spt-BR!2sbr!4v1738612057671!5m2!1spt-BR!2sbr"
-                                                            width="220px" style="border:0;" allowfullscreen=""
-                                                            loading="lazy"
-                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                            width="100%" height="100%" loading="lazy"></iframe></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Curitiba</td>
                                                     <td>542</td>
                                                     <td><iframe
                                                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2408298.2653340395!2d-49.33216665747826!3d-23.986777987212953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94c880ecaee30113%3A0xd333475dd751788f!2sLimeira%2C%20S%C3%A3o%20Paulo!3m2!1d-22.5838179!2d-47.4097569!4m5!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!3m2!1d-25.4268985!2d-49.265198399999996!5e1!3m2!1spt-BR!2sbr!4v1738612105901!5m2!1spt-BR!2sbr"
-                                                            width="220px" style="border:0;" allowfullscreen=""
-                                                            loading="lazy"
-                                                            referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                                                            width="100%" height="100%" loading="lazy"></iframe></td>
                                                 </tr>
                                             </tbody>
                                         </table>
 
-                                        <table>
+                                        <!-- Segunda Tabela: Distâncias do Centro de Limeira para outros pontos interessantes -->
+                                        <table class="table table-striped table-bordered table-hover">
                                             <caption>Distâncias do Centro de Limeira para outros pontos interessantes
                                             </caption>
-                                            <thead>
+                                            <thead class="table-dark">
                                                 <tr>
                                                     <th>Ponto de Referência</th>
                                                     <th>Distância (km)</th>
@@ -262,7 +203,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col mt-3">
                 <div class="card" style="width: 18rem;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1659.563976797694!2d-47.42531347306837!3d-22.597892462339303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c881b75264e083%3A0xe4fafd61f1bafc08!2sJardim%20Ipanema%2C%20Limeira%20-%20SP%2C%2013481-729!5e1!3m2!1spt-BR!2sbr!4v1738612785415!5m2!1spt-BR!2sbr"
@@ -290,28 +231,33 @@
                                     </div>
                                     <div class="modal-body">
 
-                                        <ul>
-                                            <li>Centro</li>
-                                            <li>Jardim Ouro Verde</li>
-                                            <li>Jardim Planalto</li>
-                                            <li>Jardim Maria Luiza</li>
-                                            <li>Jardim Piratininga</li>
-                                            <li>Vila São João</li>
-                                            <li>Jardim São Carlos</li>
-                                            <li>Vila Cláudia</li>
-                                            <li>Jardim Brasil</li>
-                                            <li>Jardim Nova Limeira</li>
-                                            <li>Vila Santa Helena</li>
-                                            <li>Jardim São Francisco</li>
-                                            <li>Vila Oliveira</li>
-                                            <li>Jardim Leopoldina</li>
-                                            <li>Vila Americana</li>
-                                        </ul>
+                                        <div class="container py-5">
+                                            <!-- Título principal -->
+                                            <h1 class="text-center mb-4">Bairros de Limeira</h1>
+                                        
+                                            <!-- Lista de Bairros -->
+                                            <ul class="list-group">
+                                              <li class="list-group-item">Centro</li>
+                                              <li class="list-group-item">Jardim Ouro Verde</li>
+                                              <li class="list-group-item">Jardim Planalto</li>
+                                              <li class="list-group-item">Jardim Maria Luiza</li>
+                                              <li class="list-group-item">Jardim Piratininga</li>
+                                              <li class="list-group-item">Vila São João</li>
+                                              <li class="list-group-item">Jardim São Carlos</li>
+                                              <li class="list-group-item">Vila Cláudia</li>
+                                              <li class="list-group-item">Jardim Brasil</li>
+                                              <li class="list-group-item">Jardim Nova Limeira</li>
+                                              <li class="list-group-item">Vila Santa Helena</li>
+                                              <li class="list-group-item">Jardim São Francisco</li>
+                                              <li class="list-group-item">Vila Oliveira</li>
+                                              <li class="list-group-item">Jardim Leopoldina</li>
+                                              <li class="list-group-item">Vila Americana</li>
+                                            </ul>
+                                          </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Understood</button>
+                                            data-bs-dismiss="modal">Fechar</button>  
                                     </div>
                                 </div>
                             </div>
@@ -321,9 +267,9 @@
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col">
+            <div class="col mt-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="imagens/hq720.jpg" class="card-img-top" alt="...">
+                    <img src="imagens/images.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">População</h5>
                         <p class="card-text">Uma breve introdução sobre a estastisticas populacionais de Limeira.</p>
@@ -345,38 +291,479 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="container">
-                                            <h1>Informações sobre Limeira</h1>
-
+                                        <div class="container py-5">
+                                            <!-- Título principal -->
+                                            <h1 class="text-center mb-4">Informações sobre Limeira</h1>
+                                        
+                                            <!-- Introdução -->
                                             <h2>Introdução</h2>
-                                            <p>Limeira é uma cidade localizada no interior do estado de São Paulo,
-                                                Brasil, a cerca de 150 km da capital paulista. Faz parte da região
-                                                metropolitana de Campinas e está estrategicamente posicionada próxima a
-                                                importantes rodovias, como a Anhanguera e a Washington Luís. Conhecida
-                                                como a "Capital Brasileira da Joia Folheada", destaca-se pela sua
-                                                economia diversificada, especialmente nos setores industrial e agrícola.
-                                                Além disso, possui um clima tropical de altitude e uma rica história
-                                                ligada ao cultivo de café e cana-de-açúcar no século XIX.</p>
-
+                                            <p>Limeira é uma cidade localizada no interior do estado de São Paulo, Brasil, a cerca de 150 km da capital paulista. Faz parte da região metropolitana de Campinas e está estrategicamente posicionada próxima a importantes rodovias, como a Anhanguera e a Washington Luís. Conhecida como a "Capital Brasileira da Joia Folheada", destaca-se pela sua economia diversificada, especialmente nos setores industrial e agrícola. Além disso, possui um clima tropical de altitude e uma rica história ligada ao cultivo de café e cana-de-açúcar no século XIX.</p>
+                                        
+                                            <!-- Dados Populacionais -->
                                             <h3>Dados Populacionais</h3>
-                                            <ul>
-                                                <li><strong>População:</strong> 291.869 habitantes (Censo 2022).</li>
-                                                <li><strong>Área Territorial:</strong> 581 km².</li>
-                                                <li><strong>Densidade Demográfica:</strong> Cerca de 502 habitantes por
-                                                    km².</li>
-                                                <li><strong>Taxa de Alfabetização:</strong> 97,2%, superior às médias
-                                                    estaduais e nacionais.</li>
-                                                <li><strong>Produto Interno Bruto (PIB):</strong> Informações elaboradas
-                                                    sobre o PIB podem ser consultadas no site do <a
-                                                        href="https://www.ibge.gov.br" target="_blank">IBGE</a>.</li>
+                                            <ul class="list-group mb-4">
+                                              <li class="list-group-item"><strong>População:</strong> 291.869 habitantes (Censo 2022).</li>
+                                              <li class="list-group-item"><strong>Área Territorial:</strong> 581 km².</li>
+                                              <li class="list-group-item"><strong>Densidade Demográfica:</strong> Cerca de 502 habitantes por km².</li>
+                                              <li class="list-group-item"><strong>Taxa de Alfabetização:</strong> 97,2%, superior às médias estaduais e nacionais.</li>
+                                              <li class="list-group-item"><strong>Produto Interno Bruto (PIB):</strong> Informações elaboradas sobre o PIB podem ser consultadas no site do <a href="https://www.ibge.gov.br" target="_blank">IBGE</a>.</li>
                                             </ul>
-
+                                        
+                                            <!-- Saiba Mais -->
                                             <h3>Saiba mais</h3>
-                                            <ul>
-                                                <li><a href="https://pt.wikipedia.org/wiki/Limeira"
-                                                        target="_blank">Wikipedia</a></li>
-                                                <li><a href="https://www.ibge.gov.br" target="_blank">IBGE</a></li>
+                                            <ul class="list-group">
+                                              <li class="list-group-item"><a href="https://pt.wikipedia.org/wiki/Limeira" target="_blank">Wikipedia</a></li>
+                                              <li class="list-group-item"><a href="https://www.ibge.gov.br" target="_blank">IBGE</a></li>
                                             </ul>
+                                          </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagens/quadra-1-.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Esportes</h5>
+                        <p class="card-text">Mostrando esportes mais praticados em Limeira.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop5">
+                            Veja Aqui
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Esportes em Limeira
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="container my-5">
+                                            <section>
+                                                <h2 class="mb-4">Introdução</h2>
+                                                <p>Limeira é uma cidade que promove e apoia diversas modalidades
+                                                    esportivas. A cidade possui clubes esportivos tradicionais,
+                                                    academias, espaços públicos para a prática de esportes e um estádio
+                                                    histórico, o Major José Levy Sobrinho, conhecido como "Limeirão".
+                                                </p>
+                                            </section>
+
+                                            <section>
+                                                <h2 class="mb-4">Esportes mais praticados</h2>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item"><strong>Futebol</strong>, com destaque
+                                                        para a equipe Inter de Limeira.</li>
+                                                    <li class="list-group-item"><strong>Basquete</strong>, com equipes
+                                                        amadoras e eventos municipais.</li>
+                                                    <li class="list-group-item"><strong>Ciclismo</strong>, graças a
+                                                        ciclovias e competições locais.</li>
+                                                    <li class="list-group-item"><strong>Atletismo</strong> e eventos
+                                                        escolares no Limeirão.</li>
+                                                </ul>
+                                            </section>
+
+                                            <section class="mt-5">
+                                                <h2 class="mb-4">Vídeos Relacionados</h2>
+                                                <p>Confira abaixo alguns vídeos relacionados ao esporte em Limeira:</p>
+                                                <ul class="list-unstyled">
+                                                    <li><iframe width="100%" height="250" src="https://www.youtube.com/embed/FZzkaCHGxsw?si=7mflug_8JHG9-5UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>Vídeo sobre futebol em Limeira</li>
+                                                    <li><iframe width="100%" height="250" src="https://www.youtube.com/embed/FS2tWv7cWXM?si=y702aYSQG1rh9UAO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>Vídeo sobre basquete em Limeira</a>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagens/prefeitura.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Prefeitos</h5>
+                        <p class="card-text">Todos os prefeitos de Limeira desde 1893 a 2025.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop6">
+                            Veja Aqui
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Esportes em Limeira
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container mt-5">
+                                            <h1 class="text-center mb-4">Lista de Prefeitos</h1>
+                                            <table class="table table-striped table-bordered">
+                                                <thead class="table-dark">
+                                                    <tr>
+                                                        <th scope="col">Nome</th>
+                                                        <th scope="col">Início</th>
+                                                        <th scope="col">Fim</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Joaquim Maynert Kehl</td>
+                                                        <td>11/07/1893</td>
+                                                        <td>31/12/1895</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Machado de Campos</td>
+                                                        <td>01/01/1896</td>
+                                                        <td>15/04/1897</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Augusto de Barros Penteado</td>
+                                                        <td>16/04/1897</td>
+                                                        <td>30/11/1898</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Belizário Leite de Barros</td>
+                                                        <td>01/12/1898</td>
+                                                        <td>14/01/1899</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cândido Pereira Gustavo</td>
+                                                        <td>15/01/1899</td>
+                                                        <td>04/09/1900</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Manuel de Toledo Barros</td>
+                                                        <td>05/09/1900</td>
+                                                        <td>12/12/1901</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Belizário Leite de Barros</td>
+                                                        <td>13/12/1901</td>
+                                                        <td>14/04/1902</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Augusto de Barros Penteado</td>
+                                                        <td>15/04/1902</td>
+                                                        <td>01/10/1903</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Leite do Canto</td>
+                                                        <td>02/10/1903</td>
+                                                        <td>21/11/1904</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Augusto de Barros Penteado</td>
+                                                        <td>22/11/1904</td>
+                                                        <td>03/11/1905</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flamínio Augusto de Toledo Barros</td>
+                                                        <td>04/11/1905</td>
+                                                        <td>26/11/1906</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Leite do Canto</td>
+                                                        <td>27/11/1906</td>
+                                                        <td>04/12/1907</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flamínio Augusto de Toledo Barros</td>
+                                                        <td>05/12/1907</td>
+                                                        <td>11/10/1907</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Leite do Canto</td>
+                                                        <td>12/10/1907</td>
+                                                        <td>28/12/1907</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flamínio Augusto de Toledo Barros</td>
+                                                        <td>29/12/1907</td>
+                                                        <td>09/04/1908</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alfredo Ferraz de Abreu</td>
+                                                        <td>10/04/1908</td>
+                                                        <td>15/05/1911</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>José Levy Sobrinho</td>
+                                                        <td>16/05/1911</td>
+                                                        <td>10/08/1914</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Leite do Canto</td>
+                                                        <td>11/08/1914</td>
+                                                        <td>09/10/1914</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mário de Sousa Queirós</td>
+                                                        <td>10/10/1914</td>
+                                                        <td>31/01/1918</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alberto Ferreira da Silva</td>
+                                                        <td>01/02/1918</td>
+                                                        <td>31/12/1920</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flamínio Augusto de Toledo Barros</td>
+                                                        <td>01/01/1921</td>
+                                                        <td>31/12/1923</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Manuel Pereira</td>
+                                                        <td>01/01/1924</td>
+                                                        <td>01/08/1924</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vicente Ferraz Pacheco</td>
+                                                        <td>02/08/1924</td>
+                                                        <td>16/10/1924</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Manuel Pereira</td>
+                                                        <td>17/10/1924</td>
+                                                        <td>19/02/1925</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flamínio Augusto de Toledo Barros</td>
+                                                        <td>20/02/1925</td>
+                                                        <td>14/12/1925</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Joaquim Manuel Pereira</td>
+                                                        <td>15/12/1925</td>
+                                                        <td>27/02/1926</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Adão Duarte do Páteo</td>
+                                                        <td>28/02/1926</td>
+                                                        <td>15/11/1928</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Horácio de Campos Barros</td>
+                                                        <td>16/11/1928</td>
+                                                        <td>28/03/1930</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lauro Corrêa da Silva</td>
+                                                        <td>29/03/1930</td>
+                                                        <td>31/12/1932</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Alfredo Ferraz de Abreu</td>
+                                                        <td>01/01/1933</td>
+                                                        <td>25/02/1934</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>José Marciliano da Costa Júnior</td>
+                                                        <td>26/02/1934</td>
+                                                        <td>08/09/1934</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Maria Teresa Silveira de Barros Camargo</td>
+                                                        <td>09/09/1934</td>
+                                                        <td>17/12/1934</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>José Marciliano da Costa Júnior</td>
+                                                        <td>18/12/1934</td>
+                                                        <td>22/04/1935</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gumercindo Godói</td>
+                                                        <td>23/04/1935</td>
+                                                        <td>29/04/1936</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>José Marciliano da Costa Júnior</td>
+                                                        <td>30/04/1936</td>
+                                                        <td>17/12/1936</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lauro Corrêa da Silva</td>
+                                                        <td>18/12/1936</td>
+                                                        <td>27/04/1938</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>José Levy Sobrinho</td>
+                                                        <td>28/04/1938</td>
+                                                        <td>30/03/1939</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ary Levy Pereira</td>
+                                                        <td>31/03/1939</td>
+                                                        <td>31/12/1942</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jorge Molina Cintra</td>
+                                                        <td>01/01/1943</td>
+                                                        <td>21/02/1944</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lucas Alvarenga Ferreira</td>
+                                                        <td>22/02/1944</td>
+                                                        <td>27/10/1945</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Otávio Lopes Castelo Branco</td>
+                                                        <td>28/10/1945</td>
+                                                        <td>07/11/1945</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Francisco Silveira Filho</td>
+                                                        <td>08/11/1945</td>
+                                                        <td>18/12/1946</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Otávio Lopes Castelo Branco</td>
+                                                        <td>19/12/1946</td>
+                                                        <td>05/01/1947</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ary Levy Pereira</td>
+                                                        <td>06/01/1947</td>
+                                                        <td>14/03/1947</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nelson de Barros Camargo</td>
+                                                        <td>15/03/1947</td>
+                                                        <td>23/05/1947</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>José Marciliano da Costa Júnior</td>
+                                                        <td>24/05/1947</td>
+                                                        <td>17/08/1947</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mário de Sousa Queirós Filho</td>
+                                                        <td>18/08/1947</td>
+                                                        <td>03/12/1947</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lucas Alvarenga Ferreira</td>
+                                                        <td>04/12/1947</td>
+                                                        <td>30/01/1948</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>José Marciliano da Costa Júnior</td>
+                                                        <td>31/01/1948</td>
+                                                        <td>30/01/1951</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Virgínio Ometto</td>
+                                                        <td>31/01/1952</td>
+                                                        <td>30/01/1955</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>José Adriano Lopes Castello Branco</td>
+                                                        <td>31/01/1956</td>
+                                                        <td>30/01/1959</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jurandir da Paixão de Campos Freire</td>
+                                                        <td>31/01/1959</td>
+                                                        <td>14/11/1962</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Renato de Almeira</td>
+                                                        <td>15/11/1962</td>
+                                                        <td>31/12/1963</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Palmyro Paulo Veronesi d'Andréa</td>
+                                                        <td>01/01/1964</td>
+                                                        <td>31/01/1969</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sebastião Fumagalli</td>
+                                                        <td>01/02/1969</td>
+                                                        <td>30/01/1973</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Palmyro Paulo Veronesi d'Andréa</td>
+                                                        <td>31/01/1973</td>
+                                                        <td>31/01/1977</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Waldemar Matos Silveira</td>
+                                                        <td>01/02/1977</td>
+                                                        <td>31/01/1983</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jurandir da Paixão de Campos Freire</td>
+                                                        <td>01/02/1983</td>
+                                                        <td>31/12/1988</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Palmyro Paulo Veronesi d'Andréa</td>
+                                                        <td>01/01/1989</td>
+                                                        <td>31/12/1992</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jurandir da Paixão de Campos Freire</td>
+                                                        <td>01/01/1993</td>
+                                                        <td>31/12/1996</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pedro Teodoro Kühl</td>
+                                                        <td>01/01/1997</td>
+                                                        <td>31/12/2000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Silvio Félix da Silva</td>
+                                                        <td>01/01/2005</td>
+                                                        <td>31/12/2008</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Paulo Cezar Junqueira Hadich</td>
+                                                        <td>01/01/2013</td>
+                                                        <td>31/12/2016</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mário Celso Botion</td>
+                                                        <td>01/01/2017</td>
+                                                        <td>31/12/2020</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mário Celso Botion</td>
+                                                        <td>01/01/2021</td>
+                                                        <td>31/12/2024</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Murilo Berbet Avigo Felix</td>
+                                                        <td>01/01/2025</td>
+                                                        <td>31/12/2028</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -390,7 +777,33 @@
                 </div>
             </div>
         </div>
+
     </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+          <div class="row">
+            <!-- Coluna 1: Informações gerais -->
+            <div class="col-md-4">
+              <h5>Sobre o Site</h5>
+              <p>Este site tem o objetivo de informar sobre a cidade de Limeira e seus pontos turísticos, culturais e históricos. Fique por dentro das novidades e descubra tudo o que Limeira tem a oferecer.</p>
+            </div>
+            <!-- Coluna 3: Contato -->
+            <div class="col-md-4">
+              <h5>Contato</h5>
+              <ul class="list-unstyled">
+                <li><a href="mailto:contato@limeira.sp.gov.br" class="text-white">contato@limeira.sp.gov.br</a></li>
+                <li><a href="https://www.limeira.sp.gov.br" class="text-white" target="_blank">www.limeira.sp.gov.br</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- Rodapé com copyright -->
+          <div class="text-center mt-4">
+            <p>&copy; 2025 Todos os direitos reservados. | Desenvolvido por Gabriel A C Paschoal</p>
+          </div>
+        </div>
+      </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
